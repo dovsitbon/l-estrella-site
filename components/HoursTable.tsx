@@ -12,7 +12,7 @@ export function HoursTable({ lang, d, week = weekHours(), className = "" }: { la
             <th scope="row" className="py-2 pe-4 text-start font-normal">
               {d.infos.days[i]}
             </th>
-            <td className={`py-2 text-end tabular-nums ${slots.length ? "" : "opacity-60"}`} dir="ltr">
+            <td className={`py-2 text-end tabular-nums ${slots.length ? "" : "opacity-75"}`} dir="ltr">
               {slots.length ? slots.map(([a, b]) => `${formatTime(a, lang)} – ${formatTime(b, lang)}`).join(", ") : d.infos.closed}
             </td>
           </tr>
