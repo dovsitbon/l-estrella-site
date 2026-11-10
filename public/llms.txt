@@ -1,0 +1,16 @@
+# L'Estrella
+
+> Restaurant à Dury (80480), au sud d'Amiens : cuisine française de produits frais, ardoise du jour, plateau de fruits de mer, spécialités portugaises sur demande, repas de famille et de groupe (70 couverts). Note Google 4,5/5 (122 avis, relevée le 10 novembre 2026).
+
+- Adresse : 103 route Nationale, 80480 Dury, France
+- Téléphone : 03 22 95 04 44 (+33 3 22 95 04 44)
+- Horaires : du lundi au vendredi 12 h – 14 h 30 ; dimanche 12 h 30 – 15 h ; fermé le samedi
+- Réservation : formulaire en ligne ou par téléphone
+
+## Pages
+- [Accueil](https://l-estrella-dury.vercel.app/fr): menu du jour, réservation, infos pratiques, FAQ
+- [La carte](https://l-estrella-dury.vercel.app/fr/carte): entrées, plats, fruits de mer, spécialités portugaises, desserts, vins
+- [Restaurant à Dury](https://l-estrella-dury.vercel.app/fr/restaurant-dury): déjeuner et dimanche midi près d'Amiens
+- [Fruits de mer près d'Amiens](https://l-estrella-dury.vercel.app/fr/fruits-de-mer-amiens): le plateau à partager
+- [Bon cadeau](https://l-estrella-dury.vercel.app/fr/bon-cadeau)
+- [English](https://l-estrella-dury.vercel.app/en)

@@ -1,0 +1,1 @@
+Déposez ici les photos « facade » prises sur place (JPG, au moins 1600 px de large), puis voir scripts/media.mjs.

@@ -1,0 +1,13 @@
+{
+  "_doc": "Menu du jour / ardoise de la semaine, affiché dans le bandeau du haut, sur l'accueil et sur la page carte. À METTRE À JOUR chaque semaine (ou chaque jour). Les plats ci-dessous sont des exemples réellement servis à L'Estrella (fiche Somme Tourisme), pas l'ardoise de cette semaine. price: null = prix non communiqué (à remplir).",
+  "updated": "2026-11-10",
+  "example": true,
+  "formulas": [
+    { "id": "entree-plat-dessert", "price": null },
+    { "id": "entree-plat", "price": null },
+    { "id": "plat-dessert", "price": null }
+  ],
+  "entree": { "fr": "Croissant au saumon fumé et mozzarella", "en": "Croissant with smoked salmon and mozzarella" },
+  "plat": { "fr": "Pavé de morue frit, fondue d'oignon et chips de pomme de terre", "en": "Fried cod steak, melted onions and potato crisps" },
+  "dessert": { "fr": "Dessert du jour", "en": "Dessert of the day" }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "L'Estrella",
+  "url": "https://l-estrella-dury.vercel.app",
+  "phone": "03 22 95 04 44",
+  "phoneIntl": "+33322950444",
+  "whatsapp": "",
+  "email": "",
+  "address": {
+    "street": "103 route Nationale",
+    "postalCode": "80480",
+    "city": "Dury",
+    "region": "Hauts-de-France",
+    "country": "FR"
+  },
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Estrella+103+route+Nationale+80480+Dury",
+  "mapsEmbed": "https://www.google.com/maps?q=L%27Estrella,+103+route+Nationale,+80480+Dury&z=15&output=embed",
+  "reviewsUrl": "https://www.google.com/maps/search/?api=1&query=L%27Estrella+restaurant+Dury",
+  "facebook": "https://www.facebook.com/lestrella.dury/",
+  "capacity": 70,
+  "rating": {
+    "value": 4.5,
+    "count": 122,
+    "source": "Google",
+    "checked": "2026-11-10"
+  },
+  "reservation": {
+    "maxGuests": 70,
+    "groupFrom": 10,
+    "lastSeatingMinutes": 45,
+    "stepMinutes": 15
+  },
+  "legal": {
+    "company": "",
+    "siret": "",
+    "director": "",
+    "host": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis"
+  }
+}

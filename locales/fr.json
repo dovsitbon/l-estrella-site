@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "title": "Restaurant à Dury, près d'Amiens – cuisine et fruits de mer | L'Estrella",
+    "description": "L'Estrella, restaurant au 103 route Nationale à Dury, au sud d'Amiens : cuisine maison de produits frais, ardoise du jour, plateau de fruits de mer, dimanche midi et repas de famille. Réservez votre table.",
+    "ogAlt": "Table dressée en pleine lumière au restaurant L'Estrella, à Dury"
+  },
+  "nav": {
+    "skip": "Aller au contenu",
+    "menu": "Menu",
+    "close": "Fermer",
+    "home": "L'Estrella, accueil",
+    "carte": "La carte",
+    "today": "Menu du jour",
+    "groups": "Groupes",
+    "book": "Réserver",
+    "infos": "Infos",
+    "gift": "Bon cadeau",
+    "call": "Appeler",
+    "lang": "Langue",
+    "bookCta": "Réserver une table",
+    "facebook": "L'Estrella sur Facebook"
+  },
+  "intro": {
+    "skip": "Passer"
+  },
+  "announce": {
+    "close": "Fermer l'annonce",
+    "today": "Menu du jour",
+    "week": "À l'ardoise cette semaine"
+  },
+  "hero": {
+    "eyebrow": "Restaurant · Route Nationale, Dury",
+    "title": "Le déjeuner, version étoile",
+    "lead": "Une cuisine de produits frais, une ardoise qui change chaque semaine et un plateau de fruits de mer à partager. À dix minutes d'Amiens.",
+    "ctaBook": "Réserver une table",
+    "ctaMenu": "Voir la carte",
+    "rating": "{value}/5 sur Google",
+    "ratingCount": "{count} avis",
+    "imageAlt": "Une table de L'Estrella dans la lumière du midi : verres à pied, nappe blanche et deux tulipes"
+  },
+  "tiles": {
+    "title": "À table",
+    "items": {
+      "today": { "label": "Menu du jour", "text": "L'ardoise de la semaine" },
+      "entrees": { "label": "Entrées", "text": "Pour bien commencer" },
+      "plats": { "label": "Plats", "text": "Cuissons justes, produits frais" },
+      "seafood": { "label": "Fruits de mer", "text": "Le plateau à partager" },
+      "desserts": { "label": "Desserts", "text": "Faits maison" },
+      "vins": { "label": "Vins", "text": "Au verre ou en bouteille" }
+    }
+  },
+  "services": {
+    "title": "Nos services",
+    "lunch": { "title": "Déjeuner en semaine", "text": "Du lundi au vendredi, midi" },
+    "sunday": { "title": "Dimanche midi", "text": "Le repas qu'on prend le temps de partager" },
+    "groups": { "title": "Groupes et familles", "text": "Jusqu'à {n} couverts" },
+    "parking": { "title": "Parking", "text": "Sur place, pour se garer sans chercher" }
+  },
+  "today": {
+    "eyebrow": "L'ardoise",
+    "title": "Le menu du jour",
+    "lead": "Chaque semaine, une entrée, un plat et un dessert du jour, servis tous les midis. Les plats changent au fil du marché.",
+    "entree": "Entrée",
+    "plat": "Plat",
+    "dessert": "Dessert",
+    "formulas": {
+      "entree-plat-dessert": "Entrée, plat et dessert",
+      "entree-plat": "Entrée et plat",
+      "plat-dessert": "Plat et dessert"
+    },
+    "priceTbc": "à l'ardoise",
+    "example": "Exemple d'ardoise. Le menu de la semaine est mis à jour ici chaque lundi.",
+    "updated": "Mis à jour le {date}",
+    "cta": "Réserver pour le déjeuner"
+  },
+  "offers": {
+    "eyebrow": "Quand venir",
+    "title": "Trois façons de s'attabler",
+    "lunch": {
+      "title": "Le déjeuner",
+      "when": "Du lundi au vendredi",
+      "text": "L'ardoise du jour pour une vraie pause, ou la carte si vous avez le temps.",
+      "cta": "Voir le menu du jour"
+    },
+    "sunday": {
+      "title": "Le dimanche midi",
+      "when": "Le dimanche, à partir de {time}",
+      "text": "Le plateau de fruits de mer, un bon plat, et personne ne regarde l'heure.",
+      "cta": "Réserver un dimanche"
+    },
+    "groups": {
+      "title": "Les repas de groupe",
+      "when": "Sur réservation",
+      "text": "Anniversaires, communions, baptêmes, repas d'entreprise : un menu préparé avec vous.",
+      "cta": "Demander un devis"
+    }
+  },
+  "blocks": {
+    "cuisine": {
+      "eyebrow": "La cuisine",
+      "title": "Des produits frais, des cuissons justes",
+      "text": "Tout part du produit : du poisson, de bonnes viandes, des légumes de saison. En cuisine, on prend le temps de la bonne cuisson, celle qui fait revenir les habitués. La carte est française, avec des clins d'œil au Portugal, comme le bacalhau à brás.",
+      "cta": "Voir la carte"
+    },
+    "seafood": {
+      "eyebrow": "Le plateau",
+      "title": "Le plateau de fruits de mer",
+      "text": "Huîtres, crevettes, bulots et ce que l'arrivage apporte de mieux, servis sur glace avec pain de seigle et beurre demi-sel. Un plateau qui se partage, idéal le dimanche. Pensez à le demander en réservant.",
+      "cta": "Réserver"
+    },
+    "family": {
+      "eyebrow": "En famille",
+      "title": "Les repas de famille et de groupe",
+      "text": "La salle accueille jusqu'à {n} convives, nappes blanches et service attentif. Pour un anniversaire, une communion ou les retrouvailles du dimanche, on prépare avec vous un menu à votre goût.",
+      "cta": "Demander un devis"
+    }
+  },
+  "photoSoon": {
+    "label": "Photo à venir",
+    "plat": "Un plat de la carte",
+    "plateau": "Le plateau de fruits de mer",
+    "facade": "La façade, route Nationale",
+    "dessert": "Un dessert maison"
+  },
+  "book": {
+    "eyebrow": "Réservation",
+    "title": "Réserver une table",
+    "lead": "Choisissez le service, le jour et l'heure. Nous vous rappelons ou vous écrivons pour confirmer. Pour le jour même, le plus simple reste de nous appeler.",
+    "service": "Service",
+    "services": {
+      "lunch": "Déjeuner (lundi – vendredi)",
+      "sunday": "Dimanche midi"
+    },
+    "date": "Date",
+    "chooseDate": "Choisir un jour",
+    "time": "Heure d'arrivée",
+    "chooseTime": "Choisir une heure",
+    "noTimes": "Plus de créneau ce jour-là. Choisissez un autre jour.",
+    "guests": "Nombre de personnes",
+    "occasion": "Occasion",
+    "occasions": {
+      "none": "Pas d'occasion particulière",
+      "birthday": "Anniversaire",
+      "communion": "Communion, baptême",
+      "family": "Repas de famille",
+      "company": "Repas d'entreprise",
+      "other": "Autre"
+    },
+    "groupHint": "À partir de {n} personnes, nous vous contactons pour préparer le menu avec vous.",
+    "message": "Message",
+    "messagePh": "Plateau de fruits de mer, allergie, chaise haute, gâteau d'anniversaire…",
+    "name": "Nom",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "submit": "Envoyer la demande",
+    "sending": "Envoi…",
+    "callInstead": "ou appelez le",
+    "privacy": "Vos coordonnées servent uniquement à traiter votre réservation.",
+    "errors": {
+      "date": "Choisissez un jour.",
+      "time": "Choisissez une heure d'arrivée.",
+      "name": "Indiquez votre nom.",
+      "phone": "Indiquez un numéro de téléphone valide.",
+      "email": "Indiquez une adresse e-mail valide.",
+      "server": "L'envoi n'a pas abouti. Réessayez, ou appelez-nous au 03 22 95 04 44."
+    },
+    "done": {
+      "title": "Demande bien reçue",
+      "text": "Merci {name}. Votre demande pour le {when} est arrivée au restaurant.",
+      "mail": "Un e-mail récapitulatif vient de vous être envoyé. La table est confirmée dès notre réponse.",
+      "notSent": "La réservation en ligne est en cours de mise en place : appelez-nous pour confirmer votre table.",
+      "again": "Nouvelle demande"
+    },
+    "mail": {
+      "subject": "Demande de réservation",
+      "title": "Nouvelle demande de réservation",
+      "service": "Service",
+      "when": "Jour et heure",
+      "guests": "Personnes",
+      "occasion": "Occasion",
+      "name": "Nom",
+      "phone": "Téléphone",
+      "email": "E-mail",
+      "message": "Message",
+      "lang": "Langue du client",
+      "replyHint": "Répondez directement à cet e-mail pour écrire au client.",
+      "confirmSubject": "Votre demande de réservation à L'Estrella",
+      "confirmIntro": "Bonjour {name}, nous avons bien reçu votre demande de réservation.",
+      "confirmOutro": "Votre table est confirmée dès notre réponse, par téléphone ou par e-mail. Pour toute modification, appelez-nous au 03 22 95 04 44. À très bientôt, L'Estrella."
+    }
+  },
+  "reviews": {
+    "eyebrow": "Ils en parlent",
+    "title": "Ce qu'en disent nos clients",
+    "count": "{count} avis Google",
+    "checked": "Note relevée le {date}",
+    "themes": ["La qualité des produits", "Les entrées", "Les cuissons", "Les repas de famille", "Le plateau de fruits de mer"],
+    "themesLabel": "Ce qui revient le plus souvent",
+    "cta": "Lire les avis sur Google"
+  },
+  "infos": {
+    "eyebrow": "Infos pratiques",
+    "title": "Nous trouver",
+    "address": "Adresse",
+    "directions": "Itinéraire",
+    "phone": "Téléphone",
+    "hours": "Horaires",
+    "hoursNote": "Service le midi uniquement. Fermetures exceptionnelles annoncées en haut du site.",
+    "access": "Accès",
+    "accessText": "Sur la route Nationale à Dury, à moins de 10 km du centre d'Amiens.",
+    "parking": "Stationnement",
+    "parkingText": "Parking à disposition au restaurant.",
+    "capacity": "Capacité",
+    "capacityText": "{n} couverts",
+    "days": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
+    "closed": "Fermé",
+    "mapTitle": "Plan d'accès à L'Estrella, 103 route Nationale à Dury"
+  },
+  "faq": {
+    "eyebrow": "Questions fréquentes",
+    "title": "Bon à savoir",
+    "items": [
+      {
+        "q": "Quels sont vos horaires ?",
+        "a": "Nous servons le midi : du lundi au vendredi de 12 h à 14 h 30, et le dimanche de 12 h 30 à 15 h. Le restaurant est fermé le samedi."
+      },
+      {
+        "q": "Faut-il réserver ?",
+        "a": "C'est conseillé, surtout le dimanche midi et pour les tables de plus de six personnes. Réservez en ligne ou appelez le 03 22 95 04 44."
+      },
+      {
+        "q": "Le plateau de fruits de mer est-il servi tous les jours ?",
+        "a": "Il dépend de l'arrivage. Le plus sûr est de le demander en réservant : nous le préparons pour votre venue."
+      },
+      {
+        "q": "Organisez-vous des repas de groupe ?",
+        "a": "Oui. La salle compte 70 couverts. Anniversaires, communions, baptêmes, repas d'entreprise : nous préparons un menu avec vous, sur devis."
+      },
+      {
+        "q": "Proposez-vous de la cuisine portugaise ?",
+        "a": "Oui, sur demande : bacalhau à brás et d'autres spécialités. Dites-le nous en réservant."
+      },
+      {
+        "q": "Quels moyens de paiement acceptez-vous ?",
+        "a": "Carte bancaire et espèces. Pour les titres-restaurant, demandez-nous au moment de réserver."
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Restaurant à Dury, au sud d'Amiens. Cuisine de produits frais, ardoise du jour et fruits de mer.",
+    "explore": "Découvrir",
+    "legal": "Mentions légales",
+    "rights": "© {year} L'Estrella, Dury"
+  },
+  "status": {
+    "open": "Ouvert maintenant",
+    "closed": "Fermé",
+    "until": "jusqu'à {time}",
+    "opens": "ouvre {day} à {time}",
+    "today": "aujourd'hui",
+    "tomorrow": "demain"
+  },
+  "carte": {
+    "eyebrow": "La carte",
+    "title": "La carte",
+    "lead": "Une cuisine française de produits frais, quelques spécialités portugaises et l'ardoise qui change chaque semaine. Les prix sont indiqués en euros, service compris.",
+    "navLabel": "Rubriques de la carte",
+    "categories": {
+      "entrees": "Entrées",
+      "plats": "Plats",
+      "fruits-de-mer": "Fruits de mer",
+      "portugal": "Spécialités portugaises",
+      "desserts": "Desserts",
+      "vins": "Vins"
+    },
+    "intro": {
+      "entrees": "L'entrée du jour, et quelques classiques de la maison.",
+      "plats": "Le plat du jour, du poisson, de la viande : selon le marché.",
+      "fruits-de-mer": "Selon l'arrivage. À demander en réservant.",
+      "portugal": "La cuisine du Portugal, sur demande.",
+      "desserts": "Faits maison.",
+      "vins": "Une sélection au verre et en bouteille."
+    },
+    "priceTbc": "à l'ardoise",
+    "from": "à partir de",
+    "perPerson": "par personne",
+    "checked": "Carte au {date}, à titre indicatif : l'ardoise du jour fait foi.",
+    "allergens": "Allergènes : la liste est disponible au restaurant, n'hésitez pas à la demander.",
+    "seeAll": "Voir toute la carte",
+    "items": {
+      "entree-du-jour": { "name": "Entrée du jour", "desc": "Selon le marché, à découvrir sur l'ardoise" },
+      "croissant-saumon": { "name": "Croissant au saumon fumé et mozzarella", "desc": "" },
+      "plat-du-jour": { "name": "Plat du jour", "desc": "Selon le marché, à découvrir sur l'ardoise" },
+      "risotto-saint-jacques": { "name": "Risotto de Saint-Jacques aux écrevisses", "desc": "" },
+      "pave-morue": { "name": "Pavé de morue frit", "desc": "Fondue d'oignon, chips de pomme de terre" },
+      "couscous-royal": { "name": "Couscous royal", "desc": "" },
+      "plateau-fruits-de-mer": { "name": "Plateau de fruits de mer", "desc": "Huîtres, crevettes, bulots, selon l'arrivage" },
+      "plateau-royal": { "name": "Plateau royal", "desc": "Le grand plateau, avec crustacés, à partager" },
+      "bacalhau-a-bras": { "name": "Bacalhau à brás", "desc": "Morue effilochée, pommes paille, œuf et olives" },
+      "specialite-portugaise": { "name": "Autres spécialités portugaises", "desc": "Sur demande, en réservant" },
+      "dessert-du-jour": { "name": "Dessert du jour", "desc": "À découvrir sur l'ardoise" },
+      "desserts-maison": { "name": "Desserts maison", "desc": "La sélection du moment" },
+      "vin-verre": { "name": "Vin au verre", "desc": "Blanc, rouge, rosé" },
+      "vin-bouteille": { "name": "Vin en bouteille", "desc": "Demandez la carte des vins" }
+    }
+  },
+  "pages": {
+    "carte": {
+      "title": "La carte",
+      "metaTitle": "La carte et les prix | L'Estrella, restaurant à Dury",
+      "metaDescription": "Entrées, plats, plateau de fruits de mer, spécialités portugaises, desserts et vins : la carte de L'Estrella à Dury, près d'Amiens, et le menu du jour."
+    },
+    "dury": {
+      "title": "Restaurant à Dury",
+      "eyebrow": "Dury · Amiens sud",
+      "metaTitle": "Restaurant à Dury, au sud d'Amiens | L'Estrella",
+      "metaDescription": "Un restaurant à Dury, sur la route Nationale, à 10 minutes d'Amiens : déjeuner en semaine, dimanche midi, repas de famille. Parking, 70 couverts.",
+      "lead": "Au 103 route Nationale, L'Estrella reçoit pour le déjeuner du lundi au vendredi et le dimanche midi. Une adresse simple à trouver depuis Amiens, avec de quoi se garer.",
+      "sections": [
+        {
+          "h": "Un déjeuner à deux pas d'Amiens",
+          "p": "Dury est à moins de 10 km du centre d'Amiens, par la route Nationale. Pour une pause du midi au calme, loin des parkings du centre, l'ardoise du jour change chaque semaine : une entrée, un plat, un dessert."
+        },
+        {
+          "h": "Le dimanche midi en famille",
+          "p": "Le dimanche, la salle se remplit de familles. Nappes blanches, plats qu'on partage, plateau de fruits de mer pour ceux qui l'ont commandé : réservez pour être sûr d'avoir votre table."
+        },
+        {
+          "h": "Pour vos événements",
+          "p": "Avec 70 couverts, L'Estrella accueille anniversaires, communions, baptêmes et repas d'entreprise. On établit le menu avec vous."
+        }
+      ]
+    },
+    "seafood": {
+      "title": "Fruits de mer près d'Amiens",
+      "eyebrow": "Le plateau",
+      "metaTitle": "Plateau de fruits de mer près d'Amiens, à Dury | L'Estrella",
+      "metaDescription": "Un plateau de fruits de mer à partager à Dury, à 10 minutes d'Amiens : huîtres, crevettes, bulots selon l'arrivage. À demander en réservant, idéal le dimanche midi.",
+      "lead": "À Dury, à 10 minutes d'Amiens, L'Estrella prépare un plateau de fruits de mer à partager, selon l'arrivage. Le meilleur moyen d'en profiter : le demander en réservant.",
+      "sections": [
+        {
+          "h": "Ce que l'on met sur le plateau",
+          "p": "Huîtres, crevettes, bulots, et ce que l'arrivage apporte de mieux. Servi sur glace, avec pain de seigle, beurre demi-sel, citron et mayonnaise maison. La composition exacte vous est donnée en réservant."
+        },
+        {
+          "h": "Le commander",
+          "p": "Le plateau se prépare à l'avance. Précisez-le dans votre réservation, ou appelez-nous au 03 22 95 04 44 : nous vous confirmons la composition et le prix du jour."
+        },
+        {
+          "h": "Et du poisson toute la semaine",
+          "p": "Risotto de Saint-Jacques aux écrevisses, pavé de morue frit, bacalhau à brás : le poisson tient une belle place à la carte et à l'ardoise."
+        }
+      ]
+    },
+    "gift": {
+      "title": "Offrir un repas à L'Estrella",
+      "eyebrow": "Bon cadeau",
+      "metaTitle": "Bon cadeau restaurant à Dury, près d'Amiens | L'Estrella",
+      "metaDescription": "Offrez un déjeuner ou un plateau de fruits de mer à L'Estrella, à Dury. Bons cadeaux disponibles au restaurant.",
+      "lead": "Un déjeuner, un dimanche midi, un plateau de fruits de mer à partager : offrez un bon moment à table. Les bons cadeaux se préparent au restaurant, au montant de votre choix.",
+      "steps": [
+        { "h": "Choisissez", "p": "Un montant libre, ou un menu à offrir." },
+        { "h": "Appelez ou passez", "p": "Nous préparons le bon, prêt à offrir, au restaurant." },
+        { "h": "Offrez", "p": "La personne réserve sa table quand elle le souhaite." }
+      ],
+      "note": "Durée de validité et conditions : à préciser par le restaurant.",
+      "cta": "Appeler pour un bon cadeau"
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "metaTitle": "Mentions légales | L'Estrella",
+      "pending": "À compléter",
+      "editor": "Éditeur du site",
+      "editorText": "L'Estrella, 103 route Nationale, 80480 Dury. Téléphone : 03 22 95 04 44.",
+      "company": "Raison sociale",
+      "siret": "SIRET",
+      "host": "Hébergeur",
+      "data": "Données personnelles",
+      "dataText": "Les informations envoyées par le formulaire de réservation servent uniquement à traiter votre demande. Elles ne sont ni revendues ni utilisées à des fins publicitaires. Vous pouvez demander leur suppression en appelant le restaurant.",
+      "cookies": "Cookies",
+      "cookiesText": "Le site n'utilise aucun cookie publicitaire ni outil de mesure d'audience. Seuls votre choix de langue et la fermeture de l'annonce sont gardés dans votre navigateur.",
+      "photos": "Photos",
+      "photosText": "Photos : © L'Estrella."
+    }
+  },
+  "alt": {
+    "table-lumiere": "Une table de L'Estrella dans la lumière du midi : verres à pied, nappe blanche et deux tulipes",
+    "salle-nappes-blanches": "La salle de L'Estrella : tables aux nappes blanches, chaises en cuir noir, parquet clair",
+    "bar-suspensions": "Le bar de L'Estrella, suspensions dorées et mur de briques"
+  }
+}

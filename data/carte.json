@@ -1,0 +1,28 @@
+{
+  "_doc": "La carte (page HTML). price: nombre en euros, ou null = « à remplir » (affiché « Prix à l'ardoise » sur le site). from: true = « à partir de ». example: true = plat repris de la fiche Somme Tourisme, à confirmer. Noms et descriptions : locales/*.json → carte.items.<id>. image: chemin dans public/media (npm run media) ou null.",
+  "checked": "2026-11-10",
+  "categories": [
+    { "id": "entrees", "items": ["entree-du-jour", "croissant-saumon"] },
+    { "id": "plats", "items": ["plat-du-jour", "risotto-saint-jacques", "pave-morue", "couscous-royal"] },
+    { "id": "fruits-de-mer", "items": ["plateau-fruits-de-mer", "plateau-royal"] },
+    { "id": "portugal", "items": ["bacalhau-a-bras", "specialite-portugaise"] },
+    { "id": "desserts", "items": ["dessert-du-jour", "desserts-maison"] },
+    { "id": "vins", "items": ["vin-verre", "vin-bouteille"] }
+  ],
+  "items": {
+    "entree-du-jour": { "price": null, "image": null },
+    "croissant-saumon": { "price": null, "image": null, "example": true },
+    "plat-du-jour": { "price": null, "image": null },
+    "risotto-saint-jacques": { "price": null, "image": null, "example": true },
+    "pave-morue": { "price": null, "image": null, "example": true },
+    "couscous-royal": { "price": null, "image": null, "example": true },
+    "plateau-fruits-de-mer": { "price": null, "from": true, "image": null, "perPerson": true },
+    "plateau-royal": { "price": null, "from": true, "image": null, "perPerson": true },
+    "bacalhau-a-bras": { "price": null, "image": null, "example": true },
+    "specialite-portugaise": { "price": null, "image": null },
+    "dessert-du-jour": { "price": null, "image": null },
+    "desserts-maison": { "price": null, "image": null },
+    "vin-verre": { "price": null, "from": true, "image": null },
+    "vin-bouteille": { "price": null, "from": true, "image": null }
+  }
+}

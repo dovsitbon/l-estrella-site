@@ -1,0 +1,388 @@
+@import "tailwindcss";
+
+@theme {
+  /* Charte : bleu marine des chaises et de l'enseigne, or des suspensions, crème des nappes,
+     corail des tulipes sur les tables, encre. L'or sert aux filets et aux étoiles ; pour le texte, on prend gold-ink. */
+  --color-navy: #1e2b45;
+  --color-navy-deep: #16203a;
+  --color-gold: #c9a45c;
+  /* Or lisible sur crème (5,2:1) */
+  --color-gold-ink: #7f5f22;
+  --color-cream: #f7f2e9;
+  --color-cream-deep: #efe7d8;
+  --color-paper: #fcfaf5;
+  --color-coral: #d97a5b;
+  /* Corail lisible sur crème (4,9:1) */
+  --color-coral-ink: #a64a2c;
+  --color-ink: #1c1a18;
+  /* Texte courant secondaire : 7,6:1 sur crème */
+  --color-muted: #4f4943;
+  --color-line: #e2d8c5;
+  --color-sage: #5f7a5a;
+
+  --font-body: var(--font-jost), "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-cormorant), "Cormorant Garamond", Garamond, Georgia, serif;
+
+  --ease-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    color-scheme: light;
+    scroll-padding-top: 6rem;
+  }
+  body {
+    background: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+  }
+  a,
+  button,
+  label,
+  select,
+  input,
+  summary {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-gold);
+    color: var(--color-ink);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-navy);
+    outline-offset: 3px;
+  }
+  [hidden] {
+    display: none !important;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--color-gold-ink);
+  }
+  .display {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.04;
+    letter-spacing: -0.01em;
+  }
+  .lead {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-muted);
+    font-weight: 300;
+  }
+  .btn,
+  .btn-line {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.625rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+    font-weight: 400;
+    border-radius: 2px;
+    white-space: nowrap;
+    transition:
+      background-color 0.4s var(--ease-soft),
+      color 0.4s var(--ease-soft),
+      border-color 0.4s var(--ease-soft),
+      transform 0.15s var(--ease-soft);
+  }
+  .btn:active,
+  .btn-line:active {
+    transform: scale(0.98);
+  }
+  .btn {
+    background: var(--color-navy);
+    border: 1px solid var(--color-navy);
+    color: var(--color-cream);
+  }
+  .btn:hover {
+    background: var(--color-ink);
+    border-color: var(--color-ink);
+  }
+  .btn-light {
+    background: var(--color-cream);
+    border-color: var(--color-cream);
+    color: var(--color-navy);
+  }
+  .btn-light:hover {
+    background: #fff;
+    border-color: #fff;
+    color: var(--color-ink);
+  }
+  .btn-line {
+    border: 1px solid color-mix(in srgb, currentColor 40%, transparent);
+  }
+  .btn-line:hover {
+    border-color: currentColor;
+    background: color-mix(in srgb, currentColor 7%, transparent);
+  }
+  .link-line {
+    background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 100% 1px;
+    padding-bottom: 0.15em;
+    transition: background-size 0.5s var(--ease-soft);
+  }
+  .link-line:hover {
+    background-size: 0 1px;
+  }
+
+  /* Filet doré avec une petite étoile au centre */
+  .rule-star {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    color: var(--color-gold);
+  }
+  .rule-star::before,
+  .rule-star::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background: currentColor;
+    opacity: 0.55;
+  }
+
+  .field {
+    width: 100%;
+    border: 1px solid var(--color-line);
+    background: var(--color-paper);
+    padding: 0.75rem 0.875rem;
+    font-size: 1rem;
+    color: var(--color-ink);
+    border-radius: 2px;
+    min-height: 3rem;
+    transition: border-color 0.3s;
+  }
+  select.field {
+    appearance: none;
+    background: var(--color-paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231e2b45' stroke-width='1.4'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 0.75rem center / 1rem;
+    padding-inline-end: 2.25rem;
+    cursor: pointer;
+  }
+  .field:focus {
+    outline: none;
+    border-color: var(--color-navy);
+  }
+  .field[aria-invalid="true"] {
+    border-color: var(--color-coral-ink);
+  }
+  .field::placeholder {
+    color: #857d74;
+  }
+  .label {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--color-muted);
+    margin-bottom: 0.375rem;
+  }
+  .seg {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 2.75rem;
+    padding: 0.5rem 1.125rem;
+    border: 1px solid var(--color-line);
+    border-radius: 2px;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    background: var(--color-paper);
+    transition:
+      border-color 0.3s,
+      background-color 0.3s,
+      color 0.3s;
+  }
+  .seg:hover {
+    border-color: var(--color-navy);
+  }
+  .seg:has(input:checked) {
+    border-color: var(--color-navy);
+    background: var(--color-navy);
+    color: var(--color-cream);
+  }
+  .seg:has(input:focus-visible) {
+    outline: 2px solid var(--color-navy);
+    outline-offset: 3px;
+  }
+
+  /* Photos : zoom très doux au survol */
+  .zoom {
+    position: relative;
+    overflow: hidden;
+  }
+  .zoom img {
+    transition: transform 1.6s var(--ease-soft);
+  }
+  .zoom:hover img,
+  .group:hover .zoom img {
+    transform: scale(1.03);
+  }
+
+  /* Ligne de carte : nom … pointillés … prix */
+  .dots {
+    flex: 1;
+    min-width: 1.5rem;
+    border-bottom: 1px dotted color-mix(in srgb, var(--color-ink) 30%, transparent);
+    transform: translateY(-0.3em);
+  }
+}
+
+/* Apparition au défilement (components/Reveal.tsx) */
+html.js .reveal:not(.in) {
+  opacity: 0;
+  transform: translateY(var(--reveal-y, 20px));
+}
+.reveal {
+  transition:
+    opacity 0.9s var(--ease-soft) var(--reveal-delay, 0s),
+    transform 0.9s var(--ease-soft) var(--reveal-delay, 0s);
+}
+.fade-in {
+  animation: fade-in 0.4s var(--ease-soft) both;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+.rise {
+  animation: rise 1s var(--ease-soft) both;
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ——— Ouverture (1,2 s, une fois par session) : fond crème, une étoile se dessine au trait or,
+   « L'ESTRELLA » apparaît, puis « RESTAURANT · DURY », fondu sur le hero. ——— */
+.intro-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--color-cream);
+  animation: intro-out 0.3s ease-out 0.9s forwards;
+}
+html.intro-seen .intro-curtain {
+  display: none;
+}
+@keyframes intro-out {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.intro-star {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: intro-draw 0.55s cubic-bezier(0.55, 0.1, 0.35, 1) 0.05s forwards;
+}
+@keyframes intro-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.intro-name {
+  opacity: 0;
+  letter-spacing: 0.32em;
+  animation: intro-name 0.45s var(--ease-soft) 0.35s forwards;
+}
+@keyframes intro-name {
+  to {
+    opacity: 1;
+    letter-spacing: 0.2em;
+  }
+}
+.intro-sub {
+  opacity: 0;
+  animation: fade-up 0.35s var(--ease-soft) 0.55s forwards;
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Détails / FAQ */
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-plus {
+  transform: rotate(45deg);
+}
+.faq-plus {
+  transition: transform 0.3s var(--ease-soft);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .intro-curtain {
+    display: none;
+  }
+  html.js .reveal:not(.in) {
+    opacity: 1;
+    transform: none;
+  }
+}

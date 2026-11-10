@@ -1,0 +1,15 @@
+{
+  "_doc": "Horaires (heure de Paris), donnés dans la commande du site : À CONFIRMER avec le restaurant (Pages Jaunes indique 12 h – 14 h en semaine). Jours : 1 = lundi … 7 = dimanche. « exceptions » : un jour précis fermé (congés, jours fériés) ou avec d'autres créneaux, ex. { \"date\": \"2026-12-25\", \"closed\": true }.",
+  "timezone": "Europe/Paris",
+  "week": {
+    "1": [["12:00", "14:30"]],
+    "2": [["12:00", "14:30"]],
+    "3": [["12:00", "14:30"]],
+    "4": [["12:00", "14:30"]],
+    "5": [["12:00", "14:30"]],
+    "6": [],
+    "7": [["12:30", "15:00"]]
+  },
+  "periods": [],
+  "exceptions": []
+}

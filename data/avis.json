@@ -1,0 +1,4 @@
+{
+  "_doc": "Avis clients affichés sur l'accueil. VIDE volontairement : à remplir uniquement avec de vrais avis Google, avec l'accord du restaurant (et des auteurs). Format : { \"name\": \"Prénom N.\", \"date\": \"2026-10\", \"text\": { \"fr\": \"…\", \"en\": \"…\" } }. Aucun avis inventé.",
+  "items": []
+}
