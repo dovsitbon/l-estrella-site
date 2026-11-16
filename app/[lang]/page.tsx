@@ -16,7 +16,7 @@ import { OpenStatus } from "@/components/OpenStatus";
 import { BookingForm } from "@/components/BookingForm";
 import { HoursTable } from "@/components/HoursTable";
 import { TodayMenu } from "@/components/TodayMenu";
-import { PhotoSlot } from "@/components/PhotoSlot";
+import { Photo } from "@/components/Photo";
 import { Star, StarRule } from "@/components/Logo";
 import { ArrowIcon, ClockIcon, DineIcon, ParkingIcon, PhoneIcon, PinIcon, UsersIcon } from "@/components/icons";
 
@@ -61,17 +61,18 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
 
   const hero = img("/media/hero/table-lumiere.jpg");
   const salle = img("/media/salle/salle-nappes-blanches.jpg");
-  const bar = img("/media/salle/bar-suspensions.jpg");
+  const facade = "/media/facade/facade-enseigne.jpg";
   const sundayStart = weekHours()[6][0]?.[0] ?? "12:30";
 
-  const tiles: { id: keyof Dict["tiles"]["items"]; href: string }[] = [
-    { id: "today", href: `${home}#menu-du-jour` },
-    { id: "entrees", href: `${carteHref}#entrees` },
-    { id: "plats", href: `${carteHref}#plats` },
-    { id: "seafood", href: `${carteHref}#fruits-de-mer` },
-    { id: "desserts", href: `${carteHref}#desserts` },
-    { id: "vins", href: `${carteHref}#vins` },
+  const tiles: { id: keyof Dict["tiles"]["items"]; href: string; photo: string }[] = [
+    { id: "today", href: `${home}#menu-du-jour`, photo: "/media/salle/ardoise-du-chef.jpg" },
+    { id: "entrees", href: `${carteHref}#entrees`, photo: "/media/plats/feuillete-poisson.jpg" },
+    { id: "plats", href: `${carteHref}#plats`, photo: "/media/plats/aile-de-raie.jpg" },
+    { id: "seafood", href: `${carteHref}#fruits-de-mer`, photo: "/media/fruits-de-mer/illustration-plateau.jpg" },
+    { id: "desserts", href: `${carteHref}#desserts`, photo: "/media/plats/dessert-caramelise.jpg" },
+    { id: "vins", href: `${carteHref}#vins`, photo: "/media/illustration/illustration-vin.jpg" },
   ];
+  const gallery = ["risotto-poulpe", "penne-saint-jacques", "piece-de-boeuf", "filet-poisson-sauce", "souris-agneau", "cheesecake", "verrine-framboise", "dessert-crumble"].map((n) => `/media/plats/${n}.jpg`);
   const services = [
     { k: "lunch", Icon: ClockIcon },
     { k: "sunday", Icon: DineIcon },
@@ -125,7 +126,9 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           <ul className="grid grid-cols-2 border-s border-t border-line sm:grid-cols-3 xl:grid-cols-6">
             {tiles.map((t, i) => (
               <Reveal as="li" key={t.id} delay={i * 0.04} className="border-e border-b border-line">
-                <Link href={t.href} className="group flex h-full min-h-40 flex-col justify-between p-5 transition-colors hover:bg-paper md:min-h-48 md:p-6">
+                <Link href={t.href} className="group flex h-full flex-col transition-colors hover:bg-paper">
+                  <Photo src={t.photo} d={d} sizes="(min-width: 1280px) 16vw, (min-width: 640px) 32vw, 48vw" className="aspect-[4/3]" />
+                  <span className="flex flex-1 flex-col justify-between gap-3 p-5 md:p-6">
                   <Star className="h-4 w-4 text-gold transition-transform duration-500 group-hover:rotate-[36deg]" />
                   <span>
                     <span className="display block text-[1.625rem] text-navy">{d.tiles.items[t.id].label}</span>
@@ -133,6 +136,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
                       {d.tiles.items[t.id].text}
                       <ArrowIcon className="h-3.5 w-3.5 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
                     </span>
+                  </span>
                   </span>
                 </Link>
               </Reveal>
@@ -196,7 +200,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
       {/* 6. Trois blocs alternés */}
       <div className="space-y-24 pt-24 md:space-y-36 md:pt-36">
         <Alt
-          media={<PhotoSlot label={d.photoSoon.label} caption={d.photoSoon.plat} className="aspect-[4/5] md:aspect-[5/6]" />}
+          media={<Photo src="/media/plats/risotto-poulpe.jpg" d={d} sizes="(min-width: 768px) 46vw, 100vw" className="aspect-[4/5] md:aspect-[5/6]" />}
           eyebrow={d.blocks.cuisine.eyebrow}
           title={d.blocks.cuisine.title}
           text={d.blocks.cuisine.text}
@@ -204,7 +208,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           href={carteHref}
         />
         <Alt
-          media={<PhotoSlot label={d.photoSoon.label} caption={d.photoSoon.plateau} tone="cream" className="aspect-[4/5] md:aspect-[5/6]" />}
+          media={<Photo src="/media/fruits-de-mer/illustration-plateau.jpg" d={d} sizes="(min-width: 768px) 46vw, 100vw" className="aspect-[4/5] md:aspect-[5/6]" />}
           eyebrow={d.blocks.seafood.eyebrow}
           title={d.blocks.seafood.title}
           text={d.blocks.seafood.text}
@@ -226,6 +230,21 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           href={`${home}?groupe=1#reserver`}
         />
       </div>
+
+      {/* 6 bis. À l'assiette : vraies photos de plats servis au restaurant */}
+      <section aria-labelledby="assiettes" className="pt-24 md:pt-36">
+        <div className="mx-auto max-w-7xl px-6 md:px-10">
+          <SectionHead eyebrow={d.photoSoon.galleryEyebrow} title={d.photoSoon.galleryTitle} id="assiettes" />
+        </div>
+        <ul className="no-scrollbar mt-10 flex snap-x snap-mandatory gap-3 overflow-x-auto px-6 md:mx-auto md:grid md:max-w-7xl md:grid-cols-4 md:overflow-visible md:px-10">
+          {gallery.map((src) => (
+            <li key={src} className="w-[70vw] shrink-0 snap-start sm:w-[42vw] md:w-auto">
+              <Photo src={src} d={d} sizes="(min-width: 768px) 24vw, 70vw" className="aspect-square" />
+            </li>
+          ))}
+        </ul>
+        <p className="mx-auto mt-4 max-w-7xl px-6 text-[0.8125rem] text-muted md:px-10">{d.photoSoon.galleryNote}</p>
+      </section>
 
       {/* 7. Réserver une table */}
       <section id="reserver" className="scroll-mt-20 px-6 pt-24 md:px-10 md:pt-36">
@@ -338,9 +357,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
               <p className="mt-4 text-[0.8125rem] text-muted">{d.infos.hoursNote}</p>
             </div>
             <div className="grid gap-4 md:col-span-2 lg:col-span-1">
-              <div className="zoom relative aspect-[4/3] bg-cream-deep">
-                <Image src={bar.src} alt={altOf(d, bar.src)} fill sizes="(min-width: 1024px) 34vw, 100vw" quality={70} className="object-cover" />
-              </div>
+              <Photo src={facade} d={d} sizes="(min-width: 1024px) 34vw, 100vw" className="aspect-[4/3]" />
               <iframe title={d.infos.mapTitle} src={site.mapsEmbed} loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="aspect-[4/3] w-full border-0 bg-cream-deep grayscale-[40%]" />
             </div>
           </div>

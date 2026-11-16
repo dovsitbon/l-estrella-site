@@ -29,7 +29,7 @@ p("- **Plateau de fruits de mer** : composition (huîtres, crevettes, bulots, pa
 p("- **Menu du jour** : l'ardoise affichée est un **exemple** (plats réellement servis, pas ceux de cette semaine). À mettre à jour chaque semaine dans `data/menu-du-jour.json` (passer `example` à `false`).");
 p("- **Horaires** : du lundi au vendredi 12 h – 14 h 30, dimanche 12 h 30 – 15 h, fermé le samedi (donnés dans la commande). Pages Jaunes indique 12 h – 14 h en semaine.");
 p("- **Parking** : « parking à disposition » (Yelp le mentionne). À confirmer.");
-p("- **Paiement** : carte bancaire et espèces ; titres-restaurant « à demander ». À confirmer.");
+p("- **Paiement** : CB, Visa, Mastercard, Amex, espèces, titres-restaurant, chèques-vacances (relevé sur Pages Jaunes). À confirmer.");
 p("- **Bon cadeau** : la page existe (lien dans le menu) ; validité et conditions à préciser.");
 p("- **Avis** : aucun avis affiché. Emplacements prêts (`data/avis.json`), à remplir avec de vrais avis Google, avec l'accord du restaurant.");
 p(`- **Note Google** : ${site.rating.value}/5 sur ${site.rating.count} avis, relevée le ${site.rating.checked}.`);

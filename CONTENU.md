@@ -11,7 +11,7 @@ Fichier généré par `npm run contenu` à partir de `locales/*.json` et `data/*
 - **Menu du jour** : l'ardoise affichée est un **exemple** (plats réellement servis, pas ceux de cette semaine). À mettre à jour chaque semaine dans `data/menu-du-jour.json` (passer `example` à `false`).
 - **Horaires** : du lundi au vendredi 12 h – 14 h 30, dimanche 12 h 30 – 15 h, fermé le samedi (donnés dans la commande). Pages Jaunes indique 12 h – 14 h en semaine.
 - **Parking** : « parking à disposition » (Yelp le mentionne). À confirmer.
-- **Paiement** : carte bancaire et espèces ; titres-restaurant « à demander ». À confirmer.
+- **Paiement** : CB, Visa, Mastercard, Amex, espèces, titres-restaurant, chèques-vacances (relevé sur Pages Jaunes). À confirmer.
 - **Bon cadeau** : la page existe (lien dans le menu) ; validité et conditions à préciser.
 - **Avis** : aucun avis affiché. Emplacements prêts (`data/avis.json`), à remplir avec de vrais avis Google, avec l'accord du restaurant.
 - **Note Google** : 4.5/5 sur 122 avis, relevée le 2026-11-10.
@@ -325,6 +325,14 @@ _Une sélection au verre et en bouteille._
   - EN : The front, on route Nationale
 - `photoSoon.dessert` : Un dessert maison
   - EN : A homemade dessert
+- `photoSoon.illustration` : Photo d'illustration
+  - EN : Illustration photo
+- `photoSoon.galleryEyebrow` : À l'assiette
+  - EN : On the plate
+- `photoSoon.galleryTitle` : Quelques assiettes de la maison
+  - EN : A few plates from our kitchen
+- `photoSoon.galleryNote` : Photos prises au restaurant. Les plats changent avec l'ardoise.
+  - EN : Photos taken at the restaurant. Dishes change with the board.
 
 ### book
 
@@ -519,8 +527,8 @@ _Une sélection au verre et en bouteille._
   - EN : Yes, on request: bacalhau à brás and other specialities. Just let us know when you book.
 - `faq.items[5].q` : Quels moyens de paiement acceptez-vous ?
   - EN : How can I pay?
-- `faq.items[5].a` : Carte bancaire et espèces. Pour les titres-restaurant, demandez-nous au moment de réserver.
-  - EN : Card and cash. For meal vouchers (titres-restaurant), ask us when you book.
+- `faq.items[5].a` : Carte bancaire (Visa, Mastercard, American Express), espèces, titres-restaurant et chèques-vacances.
+  - EN : Card (Visa, Mastercard, American Express), cash, meal vouchers (titres-restaurant) and chèques-vacances.
 
 ### footer
 
@@ -652,11 +660,26 @@ _Une sélection au verre et en bouteille._
   - EN : This site uses no advertising cookies and no analytics. Only your language choice and the closed announcement are stored in your browser.
 - `pages.legal.photos` : Photos
   - EN : Photos
-- `pages.legal.photosText` : Photos : © L'Estrella.
-  - EN : Photos: © L'Estrella.
+- `pages.legal.photosText` : Photos : © L'Estrella (fiche Somme Tourisme et page TripAdvisor du restaurant). Deux photos d'illustration proviennent d'Unsplash (licence Unsplash). Détail : PHOTOS-SOURCES.md du projet.
+  - EN : Photos: © L'Estrella (Somme Tourisme listing and the restaurant's TripAdvisor page). Two illustration photos come from Unsplash (Unsplash License).
 
 ## Textes alternatifs des photos
 
 - `table-lumiere` : Une table de L'Estrella dans la lumière du midi : verres à pied, nappe blanche et deux tulipes / A table at L'Estrella in the midday light: wine glasses, white tablecloth and two tulips
 - `salle-nappes-blanches` : La salle de L'Estrella : tables aux nappes blanches, chaises en cuir noir, parquet clair / The dining room at L'Estrella: white tablecloths, black leather chairs, pale wooden floor
 - `bar-suspensions` : Le bar de L'Estrella, suspensions dorées et mur de briques / The bar at L'Estrella, with golden pendant lights and a brick wall
+- `facade-enseigne` : La façade de L'Estrella sur la route Nationale à Dury, avec son enseigne et ses étoiles / The front of L'Estrella on route Nationale in Dury, with its sign and stars
+- `ardoise-du-chef` : L'ardoise du chef posée dans la salle de L'Estrella / The chef's chalkboard in the dining room at L'Estrella
+- `risotto-poulpe` : Risotto, poulpe grillé et tomate cerise, servi à L'Estrella / Risotto, grilled octopus and cherry tomato, served at L'Estrella
+- `feuillete-poisson` : Feuilleté de poisson sur salade, servi à L'Estrella / Fish pastry on salad, served at L'Estrella
+- `aile-de-raie` : Aile de raie, purée et légumes, servie à L'Estrella / Skate wing, mash and vegetables, served at L'Estrella
+- `dessert-caramelise` : Dessert caramélisé et fraises, servi à L'Estrella / Caramelised dessert with strawberries, served at L'Estrella
+- `filet-poisson-sauce` : Filet de poisson, pommes de terre et sauce, servi à L'Estrella / Fish fillet, potatoes and sauce, served at L'Estrella
+- `piece-de-boeuf` : Pièce de bœuf, haricots verts et gratin, servie à L'Estrella / Beef steak, green beans and gratin, served at L'Estrella
+- `souris-agneau` : Viande mijotée et purée, servie à L'Estrella / Slow-cooked meat with mash, served at L'Estrella
+- `penne-saint-jacques` : Penne aux Saint-Jacques et crevettes, servies à L'Estrella / Penne with scallops and prawns, served at L'Estrella
+- `dessert-crumble` : Dessert crémeux au crumble, servi à L'Estrella / Creamy dessert with crumble, served at L'Estrella
+- `verrine-framboise` : Verrine à la framboise et à la menthe, servie à L'Estrella / Raspberry and mint verrine, served at L'Estrella
+- `cheesecake` : Part de cheesecake au coulis de fruits rouges, servie à L'Estrella / Cheesecake with red berry coulis, served at L'Estrella
+- `illustration-plateau` : Photo d'illustration : huîtres, langoustines et crevettes sur glace / Illustration photo: oysters, langoustines and prawns on ice
+- `illustration-vin` : Photo d'illustration : verres de vin sur une table / Illustration photo: wine glasses on a table

@@ -41,20 +41,50 @@
   "tiles": {
     "title": "At the table",
     "items": {
-      "today": { "label": "Today's menu", "text": "This week's board" },
-      "entrees": { "label": "Starters", "text": "A good beginning" },
-      "plats": { "label": "Mains", "text": "Fresh produce, cooked right" },
-      "seafood": { "label": "Seafood", "text": "The platter to share" },
-      "desserts": { "label": "Desserts", "text": "Homemade" },
-      "vins": { "label": "Wine", "text": "By the glass or bottle" }
+      "today": {
+        "label": "Today's menu",
+        "text": "This week's board"
+      },
+      "entrees": {
+        "label": "Starters",
+        "text": "A good beginning"
+      },
+      "plats": {
+        "label": "Mains",
+        "text": "Fresh produce, cooked right"
+      },
+      "seafood": {
+        "label": "Seafood",
+        "text": "The platter to share"
+      },
+      "desserts": {
+        "label": "Desserts",
+        "text": "Homemade"
+      },
+      "vins": {
+        "label": "Wine",
+        "text": "By the glass or bottle"
+      }
     }
   },
   "services": {
     "title": "What we offer",
-    "lunch": { "title": "Weekday lunch", "text": "Monday to Friday, midday" },
-    "sunday": { "title": "Sunday lunch", "text": "The meal you take time to share" },
-    "groups": { "title": "Groups and families", "text": "Up to {n} guests" },
-    "parking": { "title": "Parking", "text": "On site, no need to hunt for a space" }
+    "lunch": {
+      "title": "Weekday lunch",
+      "text": "Monday to Friday, midday"
+    },
+    "sunday": {
+      "title": "Sunday lunch",
+      "text": "The meal you take time to share"
+    },
+    "groups": {
+      "title": "Groups and families",
+      "text": "Up to {n} guests"
+    },
+    "parking": {
+      "title": "Parking",
+      "text": "On site, no need to hunt for a space"
+    }
   },
   "today": {
     "eyebrow": "The board",
@@ -120,7 +150,11 @@
     "plat": "A dish from the menu",
     "plateau": "The seafood platter",
     "facade": "The front, on route Nationale",
-    "dessert": "A homemade dessert"
+    "dessert": "A homemade dessert",
+    "illustration": "Illustration photo",
+    "galleryEyebrow": "On the plate",
+    "galleryTitle": "A few plates from our kitchen",
+    "galleryNote": "Photos taken at the restaurant. Dishes change with the board."
   },
   "book": {
     "eyebrow": "Reservations",
@@ -194,7 +228,13 @@
     "title": "What our guests say",
     "count": "{count} Google reviews",
     "checked": "Rating checked on {date}",
-    "themes": ["Quality of the produce", "The starters", "Cooking done right", "Family meals", "The seafood platter"],
+    "themes": [
+      "Quality of the produce",
+      "The starters",
+      "Cooking done right",
+      "Family meals",
+      "The seafood platter"
+    ],
     "themesLabel": "What comes up most often",
     "cta": "Read the reviews on Google"
   },
@@ -212,7 +252,15 @@
     "parkingText": "Parking available at the restaurant.",
     "capacity": "Capacity",
     "capacityText": "{n} covers",
-    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
     "closed": "Closed",
     "mapTitle": "Map to L'Estrella, 103 route Nationale in Dury"
   },
@@ -242,7 +290,7 @@
       },
       {
         "q": "How can I pay?",
-        "a": "Card and cash. For meal vouchers (titres-restaurant), ask us when you book."
+        "a": "Card (Visa, Mastercard, American Express), cash, meal vouchers (titres-restaurant) and chèques-vacances."
       }
     ]
   },
@@ -288,20 +336,62 @@
     "allergens": "Allergens: the full list is available at the restaurant, just ask.",
     "seeAll": "See the full menu",
     "items": {
-      "entree-du-jour": { "name": "Starter of the day", "desc": "Depending on the market, see the board" },
-      "croissant-saumon": { "name": "Croissant with smoked salmon and mozzarella", "desc": "" },
-      "plat-du-jour": { "name": "Main of the day", "desc": "Depending on the market, see the board" },
-      "risotto-saint-jacques": { "name": "Scallop risotto with crayfish", "desc": "" },
-      "pave-morue": { "name": "Fried cod steak", "desc": "Melted onions, potato crisps" },
-      "couscous-royal": { "name": "Couscous royal", "desc": "" },
-      "plateau-fruits-de-mer": { "name": "Seafood platter", "desc": "Oysters, prawns, whelks, depending on the catch" },
-      "plateau-royal": { "name": "Royal platter", "desc": "The big platter, with shellfish, for sharing" },
-      "bacalhau-a-bras": { "name": "Bacalhau à brás", "desc": "Shredded salt cod, straw potatoes, egg and olives" },
-      "specialite-portugaise": { "name": "Other Portuguese specialities", "desc": "On request, when you book" },
-      "dessert-du-jour": { "name": "Dessert of the day", "desc": "See the board" },
-      "desserts-maison": { "name": "Homemade desserts", "desc": "Today's selection" },
-      "vin-verre": { "name": "Wine by the glass", "desc": "White, red, rosé" },
-      "vin-bouteille": { "name": "Wine by the bottle", "desc": "Ask for the wine list" }
+      "entree-du-jour": {
+        "name": "Starter of the day",
+        "desc": "Depending on the market, see the board"
+      },
+      "croissant-saumon": {
+        "name": "Croissant with smoked salmon and mozzarella",
+        "desc": ""
+      },
+      "plat-du-jour": {
+        "name": "Main of the day",
+        "desc": "Depending on the market, see the board"
+      },
+      "risotto-saint-jacques": {
+        "name": "Scallop risotto with crayfish",
+        "desc": ""
+      },
+      "pave-morue": {
+        "name": "Fried cod steak",
+        "desc": "Melted onions, potato crisps"
+      },
+      "couscous-royal": {
+        "name": "Couscous royal",
+        "desc": ""
+      },
+      "plateau-fruits-de-mer": {
+        "name": "Seafood platter",
+        "desc": "Oysters, prawns, whelks, depending on the catch"
+      },
+      "plateau-royal": {
+        "name": "Royal platter",
+        "desc": "The big platter, with shellfish, for sharing"
+      },
+      "bacalhau-a-bras": {
+        "name": "Bacalhau à brás",
+        "desc": "Shredded salt cod, straw potatoes, egg and olives"
+      },
+      "specialite-portugaise": {
+        "name": "Other Portuguese specialities",
+        "desc": "On request, when you book"
+      },
+      "dessert-du-jour": {
+        "name": "Dessert of the day",
+        "desc": "See the board"
+      },
+      "desserts-maison": {
+        "name": "Homemade desserts",
+        "desc": "Today's selection"
+      },
+      "vin-verre": {
+        "name": "Wine by the glass",
+        "desc": "White, red, rosé"
+      },
+      "vin-bouteille": {
+        "name": "Wine by the bottle",
+        "desc": "Ask for the wine list"
+      }
     }
   },
   "pages": {
@@ -359,9 +449,18 @@
       "metaDescription": "Give a lunch or a seafood platter at L'Estrella in Dury. Gift vouchers available at the restaurant.",
       "lead": "A lunch, a Sunday meal, a seafood platter to share: give someone a lovely time at the table. Vouchers are prepared at the restaurant, for the amount of your choice.",
       "steps": [
-        { "h": "Choose", "p": "Any amount, or a set menu to offer." },
-        { "h": "Call or drop by", "p": "We prepare the voucher, ready to give, at the restaurant." },
-        { "h": "Give it", "p": "They book their table whenever they like." }
+        {
+          "h": "Choose",
+          "p": "Any amount, or a set menu to offer."
+        },
+        {
+          "h": "Call or drop by",
+          "p": "We prepare the voucher, ready to give, at the restaurant."
+        },
+        {
+          "h": "Give it",
+          "p": "They book their table whenever they like."
+        }
       ],
       "note": "Validity and terms: to be confirmed by the restaurant.",
       "cta": "Call about a gift voucher"
@@ -380,12 +479,27 @@
       "cookies": "Cookies",
       "cookiesText": "This site uses no advertising cookies and no analytics. Only your language choice and the closed announcement are stored in your browser.",
       "photos": "Photos",
-      "photosText": "Photos: © L'Estrella."
+      "photosText": "Photos: © L'Estrella (Somme Tourisme listing and the restaurant's TripAdvisor page). Two illustration photos come from Unsplash (Unsplash License)."
     }
   },
   "alt": {
     "table-lumiere": "A table at L'Estrella in the midday light: wine glasses, white tablecloth and two tulips",
     "salle-nappes-blanches": "The dining room at L'Estrella: white tablecloths, black leather chairs, pale wooden floor",
-    "bar-suspensions": "The bar at L'Estrella, with golden pendant lights and a brick wall"
+    "bar-suspensions": "The bar at L'Estrella, with golden pendant lights and a brick wall",
+    "facade-enseigne": "The front of L'Estrella on route Nationale in Dury, with its sign and stars",
+    "ardoise-du-chef": "The chef's chalkboard in the dining room at L'Estrella",
+    "risotto-poulpe": "Risotto, grilled octopus and cherry tomato, served at L'Estrella",
+    "feuillete-poisson": "Fish pastry on salad, served at L'Estrella",
+    "aile-de-raie": "Skate wing, mash and vegetables, served at L'Estrella",
+    "dessert-caramelise": "Caramelised dessert with strawberries, served at L'Estrella",
+    "filet-poisson-sauce": "Fish fillet, potatoes and sauce, served at L'Estrella",
+    "piece-de-boeuf": "Beef steak, green beans and gratin, served at L'Estrella",
+    "souris-agneau": "Slow-cooked meat with mash, served at L'Estrella",
+    "penne-saint-jacques": "Penne with scallops and prawns, served at L'Estrella",
+    "dessert-crumble": "Creamy dessert with crumble, served at L'Estrella",
+    "verrine-framboise": "Raspberry and mint verrine, served at L'Estrella",
+    "cheesecake": "Cheesecake with red berry coulis, served at L'Estrella",
+    "illustration-plateau": "Illustration photo: oysters, langoustines and prawns on ice",
+    "illustration-vin": "Illustration photo: wine glasses on a table"
   }
 }

@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import site from "@/data/site.json";
 import carte from "@/data/carte.json";
-import { altOf, fill, getDict, isLocale, locales, type Dict, type Locale } from "@/lib/i18n";
+import { fill, getDict, isLocale, locales, type Dict, type Locale } from "@/lib/i18n";
 import { formatDay } from "@/lib/format";
-import { img } from "@/lib/media";
 import { PAGE_IDS, pageOfSlug, pagePath, SLUGS, type PageId } from "@/lib/pages";
 import { pageJsonLd } from "@/lib/jsonld";
 import { CATEGORIES, Menu } from "@/components/Menu";
@@ -14,7 +12,7 @@ import { TodayMenu } from "@/components/TodayMenu";
 import { OpenStatus } from "@/components/OpenStatus";
 import { Rating } from "@/components/Rating";
 import { HoursTable } from "@/components/HoursTable";
-import { PhotoSlot } from "@/components/PhotoSlot";
+import { Photo } from "@/components/Photo";
 import { Star, StarRule } from "@/components/Logo";
 import { PhoneIcon } from "@/components/icons";
 
@@ -115,7 +113,6 @@ function Carte({ lang, d }: { lang: Locale; d: Dict }) {
 /** Pages de référencement local : « Restaurant à Dury » et « Fruits de mer près d'Amiens ». */
 function Local({ lang, d, id }: { lang: Locale; d: Dict; id: "dury" | "seafood" }) {
   const p = d.pages[id];
-  const salle = img("/media/salle/salle-nappes-blanches.jpg");
   return (
     <div className="px-6 pt-14 pb-24 md:px-10 md:pt-20 md:pb-32">
       <div className="mx-auto max-w-7xl">
@@ -127,11 +124,9 @@ function Local({ lang, d, id }: { lang: Locale; d: Dict; id: "dury" | "seafood" 
             </div>
           </div>
           {id === "seafood" ? (
-            <PhotoSlot label={d.photoSoon.label} caption={d.photoSoon.plateau} className="aspect-[4/5]" />
+            <Photo src="/media/fruits-de-mer/illustration-plateau.jpg" d={d} priority sizes="(min-width: 768px) 42vw, 100vw" className="aspect-[4/5]" />
           ) : (
-            <div className="relative aspect-[4/5] bg-cream-deep">
-              <Image src={salle.src} alt={altOf(d, salle.src)} fill priority sizes="(min-width: 768px) 42vw, 100vw" quality={75} className="object-cover object-[45%_50%]" />
-            </div>
+            <Photo src="/media/facade/facade-enseigne.jpg" d={d} priority sizes="(min-width: 768px) 42vw, 100vw" className="aspect-[4/5]" imgClassName="object-cover object-[35%_50%]" />
           )}
         </div>
         <div className="mt-20 grid gap-12 border-t border-line pt-16 md:mt-28 md:grid-cols-3 md:gap-14">

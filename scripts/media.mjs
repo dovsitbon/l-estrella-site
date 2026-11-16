@@ -2,8 +2,8 @@
 // dans public/media/<catégorie>/ (next/image sert ensuite AVIF/WebP à la bonne taille).
 //   npm run media
 //
-// Source : les 3 photos publiées par le restaurant sur sa fiche Somme Tourisme (© L'Estrella).
-// Pas encore de photo de plats, du plateau de fruits de mer ni de la façade : le site affiche des emplacements élégants.
+// Sources : fiche Somme Tourisme (© L'Estrella), page TripAdvisor du restaurant, et 2 illustrations Unsplash.
+// Détail et licences : PHOTOS-SOURCES.md.
 // Pour ajouter vos photos prises sur place : déposez le fichier dans assets/raw/, ajoutez une ligne dans PICKS
 // (source, catégorie, nom), relancez npm run media, puis indiquez le chemin /media/<catégorie>/<nom>.jpg
 // dans data/carte.json (image) ou dans lib/photos.ts (emplacements de l'accueil).
@@ -19,6 +19,25 @@ const PICKS = [
   // la photo de salle a des bandes noires en haut et en bas : on les retire
   ["raw/estrella_tourisme_l-estrella1.jpg", "salle", "salle-nappes-blanches", { left: 0, top: 50, width: 1075, height: 588 }],
   ["raw/estrella_tourisme_l-estrella.jpg", "salle", "bar-suspensions"],
+
+  // Photos de L'Estrella publiées sur sa page TripAdvisor (façade, ardoise, plats servis au restaurant)
+  ["raw/estrella_tripadvisor_07b9c7cf.jpg", "facade", "facade-enseigne"],
+  ["raw/estrella_tripadvisor_214e94a2.jpg", "salle", "ardoise-du-chef"],
+  ["raw/estrella_tripadvisor_1fe73bd3.jpg", "plats", "risotto-poulpe"],
+  ["raw/estrella_tripadvisor_23998e9f.jpg", "plats", "feuillete-poisson"],
+  ["raw/estrella_tripadvisor_214e94a6.jpg", "plats", "aile-de-raie"],
+  ["raw/estrella_tripadvisor_07b9c7c2.jpg", "plats", "dessert-caramelise"],
+  ["raw/estrella_tripadvisor_07b9c7a9.jpg", "plats", "filet-poisson-sauce"],
+  ["raw/estrella_tripadvisor_0907f458.jpg", "plats", "piece-de-boeuf"],
+  ["raw/estrella_tripadvisor_1a3ad621.jpg", "plats", "souris-agneau"],
+  ["raw/estrella_tripadvisor_214e94a5.jpg", "plats", "penne-saint-jacques"],
+  ["raw/estrella_tripadvisor_214e94a7.jpg", "plats", "dessert-crumble"],
+  ["raw/estrella_tripadvisor_23998ea3.jpg", "plats", "verrine-framboise"],
+  ["raw/estrella_tripadvisor_23998ea5.jpg", "plats", "cheesecake"],
+
+  // Photos libres de droits (Unsplash) : illustrations, jamais présentées comme le restaurant (voir PHOTOS-SOURCES.md)
+  ["raw/stock_unsplash_FsVn3TQReMI.jpg", "fruits-de-mer", "illustration-plateau"],
+  ["raw/stock_unsplash_2kW9GxdhEHc.jpg", "illustration", "illustration-vin"],
 ];
 
 const sizes = {};
