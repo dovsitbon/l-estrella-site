@@ -208,7 +208,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           href={carteHref}
         />
         <Alt
-          media={<Photo src="/media/fruits-de-mer/illustration-plateau.jpg" d={d} sizes="(min-width: 768px) 46vw, 100vw" className="aspect-[4/5] md:aspect-[5/6]" />}
+          media={<Photo src="/media/fruits-de-mer/illustration-plateau.jpg" d={d} sizes="(min-width: 768px) 46vw, 100vw" className="aspect-[4/5] md:aspect-[5/6]" imgClassName="object-cover object-[60%_100%]" />}
           eyebrow={d.blocks.seafood.eyebrow}
           title={d.blocks.seafood.title}
           text={d.blocks.seafood.text}

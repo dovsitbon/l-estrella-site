@@ -124,7 +124,7 @@ function Local({ lang, d, id }: { lang: Locale; d: Dict; id: "dury" | "seafood" 
             </div>
           </div>
           {id === "seafood" ? (
-            <Photo src="/media/fruits-de-mer/illustration-plateau.jpg" d={d} priority sizes="(min-width: 768px) 42vw, 100vw" className="aspect-[4/5]" />
+            <Photo src="/media/fruits-de-mer/illustration-plateau.jpg" d={d} priority sizes="(min-width: 768px) 42vw, 100vw" className="aspect-[4/5]" imgClassName="object-cover object-[60%_100%]" />
           ) : (
             <Photo src="/media/facade/facade-enseigne.jpg" d={d} priority sizes="(min-width: 768px) 42vw, 100vw" className="aspect-[4/5]" imgClassName="object-cover object-[35%_50%]" />
           )}
